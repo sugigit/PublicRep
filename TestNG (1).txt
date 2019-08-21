@@ -1,0 +1,48 @@
+package utils;
+
+import org.testng.annotations.Test;
+
+public class TestNG {
+	
+	@Test(enabled = true)
+	public void method8(){
+		System.out.println("method8");
+	}
+	
+	
+	@Test(dependsOnMethods = "method8")
+public void method7(){
+	System.out.println("method7");
+	}
+
+@Test
+public void method6(){
+	System.out.println("method6");
+}
+
+@Test
+public void method5(){
+	System.out.println("method5");
+}
+
+@Test
+public void method4(){
+	System.out.println("method4");
+}
+
+@Test
+public void method3(){
+	System.out.println("method3");
+}
+
+@Test
+public void method2(){
+	System.out.println("method2");
+}
+
+@Test
+public void method1(){
+	System.out.println("method1");
+}
+
+}
